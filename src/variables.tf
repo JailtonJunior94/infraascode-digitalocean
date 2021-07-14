@@ -31,11 +31,11 @@ variable "mongodb_cluster_nodes_count" {
 variable "mongodb_database_name" {
   type        = string
   description = "Nome do banco de dados"
-  default     = "SampleDB"
+  default     = "sandbox"
 }
 
 variable "mongodb_username" {
   type        = string
-  description = "Nome do usuário "
-  default     = "SampleUser"
+  description = "Nome do usuário"
+  default     = "sandbox-user"
 }
