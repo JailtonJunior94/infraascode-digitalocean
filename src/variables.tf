@@ -24,3 +24,11 @@ variable "node_size" {
 variable "node_count" {
   default = 1
 }
+
+variable "aws_region" {
+  default = "us-east-1"
+}
+
+variable "aws_profile" {
+  default = "default"
+}

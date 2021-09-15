@@ -1,17 +1,4 @@
-# Principais comandos (Em construção) 🚧
-
-```
-terraform plan
+## Alterando kubeconfig
 ```
 
-```
-terraform apply
-```
-
-```
-terraform destroy
-```
-
-```
-terraform output -json
 ```
