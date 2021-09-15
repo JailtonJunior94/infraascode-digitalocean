@@ -1,41 +1,26 @@
 variable "do_token" {
-  type        = string
-  description = "Token do provedor Digital Ocean"
-  default     = ""
+  default = ""
 }
 
 variable "region" {
-  type        = string
-  description = "Região onde será disponibilizado o cluster"
-  default     = "nyc3"
+  default = "nyc1"
 }
 
-variable "mongodb_cluster_name" {
-  type        = string
-  description = "Nome do cluster MongoDB"
-  default     = "mongo-cluster"
+variable "cluster_version" {
+  default = "1.21.3-do.0"
 }
 
-variable "mongodb_cluster_size" {
-  type        = string
-  description = "Taminho do cluster MongoDB"
-  default     = "db-s-1vcpu-1gb"
+variable "cluster_name" {
+  default = "estudos-k8s"
 }
 
-variable "mongodb_cluster_nodes_count" {
-  type        = number
-  description = "Quantidade de nodes do cluster MongoDB"
-  default     = 1
+variable "node_name" {
+  default = "estudos-node-pool"
+}
+variable "node_size" {
+  default = "s-2vcpu-2gb"
 }
 
-variable "mongodb_database_name" {
-  type        = string
-  description = "Nome do banco de dados"
-  default     = "sandbox"
-}
-
-variable "mongodb_username" {
-  type        = string
-  description = "Nome do usuário"
-  default     = "sandbox-user"
+variable "node_count" {
+  default = 1
 }
