@@ -18,7 +18,7 @@ variable "node_name" {
   default = "estudos-node-pool"
 }
 variable "node_size" {
-  default = "s-2vcpu-2gb"
+  default = "s-4vcpu-8gb"
 }
 
 variable "node_count" {
